@@ -1,0 +1,994 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    /* height: 5000px; */
+    background-color: #f0f2f5;
+}
+/* This is the style of parent navbare*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height: 55px;
+    box-shadow: 0px 1px 3px#ccc;
+    position: sticky;
+    top:0px;
+    z-index: 3;
+    background-color:white;
+    
+   
+}
+
+/* This is the style of left navbare*/
+.nav-left{
+    display:flex;
+    align-items: center;
+    margin-left: 5px;
+    
+  
+
+}
+/* This is the style of left nav icon facebook*/
+.nav-left .fa-facebook{
+    color:rgba(44, 44, 244, 0.803);
+    font-size: 37px;
+}
+
+
+/* This is the style of left nav search parent*/
+.nav-left .search{
+  position: relative;
+  margin-left: 6px;
+}
+/* This is the style of left nav => icons search*/
+.nav-left .search .fa-magnifying-glass{
+   position: absolute;
+   left:7px;
+   top:10px;
+   color:#5a5555;
+}
+/* This is the style of left nav => input search*/
+.nav-left .search .input-search{
+    color:black;
+    background-color: #d8d1d157;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    font-size: 15px;
+    border:none;
+    border-radius: 50px;
+}
+/* This is the style of left nav => input search*/
+.nav-left .search .input-search:focus{
+    outline: none;
+}
+/* This is the style of middle nav => parent*/
+.nav-middle
+{
+display: flex;
+align-items: flex-end;
+
+margin-right:0px;
+margin-bottom: 0px;
+
+   
+}
+/* This is the style of middle nav => icons liks*/
+.nav-middle a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:10px;
+    color:#3637399e;
+    
+    padding:10px 20px;
+
+}
+/* This is the style of middle nav => first icons*/
+.nav-middle .active{
+    color:rgba(44, 44, 244, 0.803); 
+    border-bottom: 2px solid rgba(44, 44, 244, 0.803);
+}
+
+.nav-middle .active:hover{
+    background-color: white;
+}
+/* This is the style of middle nav => first icons*/
+.nav-middle a:hover{
+    background-color: #5a555529;
+}
+
+
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-right:5px;
+    padding: 2px 10px 2px 2px ;
+    border-radius: 8px;
+   
+
+}
+.profile img{
+    width:30px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.profile p{
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.nav-right a{
+    text-decoration: none;
+    background-color: #2c2a2a29;
+    padding:10px;
+    border-radius: 50%;
+    margin:5px;
+    margin-top:10px;
+    font-size: 18px;
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+/* End navbare */
+
+.section-all{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: #f0f2f5;
+   
+
+ 
+    
+}
+
+.left-side{
+   background-color: #f0f2f5;
+   height: 100vh;
+   overflow: hidden;
+   width: 280px;
+   position: sticky;
+   left:0px;
+   top:55px;
+  
+}
+
+
+.left-side:hover{
+  overflow-y: scroll;
+
+}
+.section-all .left-side ul li{
+    display: flex;
+    margin:15px;
+    align-items: center;
+   margin-top: 20px;
+}
+
+.section-all .left-side ul li p{
+    margin-left:10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.section-all .left-side ul li img{
+    border-radius: 50%;
+}
+/* Start Coding The Middle Side */
+
+
+.middle-side {
+
+    width:850px;
+    background-color:#f0f2f5;
+
+    
+
+}
+
+.middle-side .container{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 15px;
+ /* border: red solid 1px; */
+ 
+}
+
+/*middle-side container-1*/
+
+.middle-side .container .container-1{
+    background-color:white;
+    height: 245px;
+    width: 150px;
+    border-radius: 20px;
+    margin-right:30px;
+    position: relative;
+    margin: 5px;
+   
+   
+}
+
+.middle-side .container .container-1 img{
+    width:150px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.middle-side .container .container-1 .fa-plus{
+    color:white;
+    background-color: blue;
+    padding:10px;
+    border-radius: 50%;
+    border: white solid 4px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.middle-side .container .container-1 p {
+    text-transform: capitalize;
+    text-align: center;
+    color:red;
+    margin-top:30px;
+}
+/*middle-side container-2*/
+.middle-side .container .container-2{
+    
+    position: relative;
+    /* right: 100px;
+    top:6px; */
+
+}
+
+.middle-side .container .container-2 .big-img{
+    height: 240px;
+    width: 150px;
+    border-radius: 20px;
+
+
+}
+.middle-side .container .container-2 .small-img{
+    width: 40px;
+    height: 40px;
+    border:rgba(0, 0, 255, 0.718) solid 5px;
+    border-radius: 50%;
+    position: absolute;
+    top:11px;
+    left:16px;
+
+}
+
+.middle-side .container .container-2 p{
+    text-align: center;
+    margin-top:7px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 50px;
+    left:30px;
+    color:white;
+    font-weight: bolder;
+}
+
+/*middle-side container-3*/
+
+
+.middle-side .container .container-3{
+    
+    position: relative;
+    /* right: 100px;
+    top:6px; */
+
+}
+
+.middle-side .container .container-3 .big-img{
+    height: 240px;
+    width: 150px;
+    border-radius: 20px;
+
+
+}
+.middle-side .container .container-3 .small-img{
+    width: 40px;
+    height: 40px;
+    border:rgba(0, 0, 255, 0.718) solid 5px;
+    border-radius: 50%;
+    position: absolute;
+    top:11px;
+    left:16px;
+
+}
+
+.middle-side .container .container-3 p{
+    text-align: center;
+    margin-top:7px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 50px;
+    left:30px;
+    color:white;
+    font-weight: bolder;
+}
+
+
+/*middle-side container-4*/
+
+.middle-side .container .container-4{
+    
+    position: relative;
+    /* right: 100px;
+    top:6px; */
+
+}
+
+.middle-side .container .container-4 .big-img{
+    height: 240px;
+    width: 150px;
+    border-radius: 20px;
+
+
+}
+.middle-side .container .container-4 .small-img{
+    width: 40px;
+    height: 40px;
+    border:rgba(0, 0, 255, 0.718) solid 5px;
+    border-radius: 50%;
+    position: absolute;
+    top:11px;
+    left:16px;
+
+}
+
+.middle-side .container .container-4 p{
+    text-align: center;
+    margin-top:7px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 40px;
+    left:30px;
+    color:white;
+    font-weight: bolder;
+}
+
+
+/* middle-side container-5*/
+
+.middle-side .container .container-5{
+    
+    position: relative;
+    /* right: 100px;
+    top:6px; */
+
+}
+
+.middle-side .container .container-5 .big-img{
+    height: 240px;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #f0f2f5;
+
+
+}
+.middle-side .container .container-5 .small-img{
+    width: 40px;
+    height: 40px;
+    border:rgba(0, 0, 255, 0.519) solid 5px;
+    border-radius: 60%;
+    position: absolute;
+    top:11px;
+    left:16px;
+
+}
+
+.middle-side .container .container-5 p{
+    text-align: center;
+    margin-top:7px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 40px;
+    left:30px;
+    color:white;
+    font-weight: bolder;
+}
+
+/* start coding the middle scrolls -1 */
+
+
+.middle-side .container-scroll-1 {
+    box-shadow: 0px 0px 5px 5px#ddd;
+    width: 100%;
+    height: 170px;
+    background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+.middle-side .container-scroll-1 .first-div{
+
+    display: flex; 
+     align-items:center;
+       margin-top:40px;
+
+}
+.middle-side .container-scroll-1 .first-div img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 25px;
+  
+    
+}
+
+.middle-side .container-scroll-1 .first-div input{
+    width: 80%;
+    height: 50px;
+    color:black;
+    background-color: #d8d1d157;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    font-size: 15px;
+    border:none;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.middle-side .container-scroll-1 .first-div input:focus{
+    outline: none;
+    
+  background-color:#6b6b6530;
+}
+
+.hr-style{
+    margin-top: 15px;
+    margin-left: 28px;
+    width: 93%;
+    background-color: rgb(190, 189, 189);
+}
+
+
+.middle-side .container-scroll-1 .second-div{
+   
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px
+    
+}
+
+.middle-side .container-scroll-1 .second-div a{
+   margin-left:15px;
+   text-decoration: none;
+   
+}
+
+.middle-side .container-scroll-1 .second-div  a :hover{
+    color:blue;
+}
+
+/* End coding the middle scrolls -1 */
+
+
+
+
+
+
+
+
+
+/* The start of the middle style post-2*/
+
+.container-scroll-2 {
+    margin-top:80px;
+    box-shadow: 0px 0px 5px 5px#ddd;
+    width: 100%;
+    height: 610px;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.container-scroll-2 .first{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.container-scroll-2 .first .first-left-child-1{
+   display: flex;
+   margin-left:20px;
+   margin-top:30px;
+}
+.container-scroll-2 .first .first-left-child-1 img{
+    border-radius: 50%;
+    margin-top:10px;
+}
+
+.container-scroll-2 .first .first-left-child-2{
+
+    /* color:red; */
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.container-scroll-2 .first .first-right-icons{
+    margin-right:30px;
+    margin-top: 44px;
+    font-size:20px;
+    color:black;
+}
+.container-scroll-2 .first .first-right-icons:hover{
+    background-color:#65676b40;
+    width:25px;
+    height:30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container-scroll-2 .second{
+  width:90%;
+  height: 350px;
+  /* border:red solid 1px; */
+  margin-left:40px;
+  margin-top:10px;
+  /* background-color:blue; */
+ background-image: url("https://images.pexels.com/photos/17505897/pexels-photo-17505897/free-photo-of-telescope-photo-of-ngc-7023-galaxy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover 
+}
+.container-scroll-2 .caption{
+margin-top:10px;
+margin-left:40px;
+font-size: 20px;
+color:gray;
+    
+}
+
+.container-scroll-2 .second .desc-caption {
+  width:100%;
+}
+/* start coding the react*/
+
+.react{
+    border-top: black solid 1px;
+    margin-top:29px;
+    margin-left:40px;
+    margin-right:40px;
+   
+}
+.react .react-parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px;
+}
+
+.react .react-parent div{
+    color:gray;
+}
+.react .react-parent div a {
+    text-decoration: none;
+    color:blue;
+}
+
+.react .react-parent div  :hover{
+    color:gray;
+}
+
+/* The end of the middle style post-2*/
+
+
+/* start coding the post-3*/
+
+.container-scroll-3 {
+
+    width: 100%;
+    height: 250px;
+    /* border: red solid 1px; */
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px #ddd;
+    margin-top:50px;
+    border-radius: 28px;
+}
+
+.container-scroll-3 .fpost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-scroll-3 .fpost .fpost-left-1 {
+    display: flex;
+    margin-left: 20px;
+    margin-top:15px;
+}
+
+.container-scroll-3 .fpost .fpost-left-1 img{
+    margin-right: 10px; 
+    border-radius: 50%;
+
+}
+
+
+.container-scroll-3 .fpost .fpost-right-1 i {
+    margin-right: 30px;
+    margin-top:25px;
+    color:blue;
+    padding:0px 10px 0px 10px ;
+    font-size: 20px;
+
+}
+
+.container-scroll-3 .lpost p{
+    margin-top:25px;
+    margin-left:20px;
+
+}
+
+
+.container-scroll-3 .lpost .lpost-recat { 
+    border-top: 1px black solid ;
+    margin-top:50px;
+    margin-right: 30px;
+    margin-left:30px;
+   
+}
+
+.container-scroll-3 .lpost .lpost-recat .lpost-react-parent{
+
+ display: flex;
+    justify-content: space-around;
+    margin-top:40px;
+}
+
+
+.container-scroll-3 .lpost .lpost-recat .lpost-react-parent div {
+
+ color:gray;
+}
+
+
+.container-scroll-3 .lpost .lpost-recat .lpost-react-parent div a {
+    text-decoration: none;
+    color:blue;
+}
+
+.container-scroll-3 .lpost .lpost-recat .lpost-react-parent div :hover{
+    color:gray;
+}
+
+
+/* End coding the post-3*/
+/* *************************************************************************************************************************************************************/
+
+/* start coding the post-4*/
+
+
+.container-scroll-4 {
+    margin-top:80px;
+    box-shadow: 0px 0px 5px 5px#ddd;
+    width: 100%;
+    height: 610px;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.container-scroll-4 .first{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.container-scroll-4 .first .first-left-child-1{
+   display: flex;
+   margin-left:20px;
+   margin-top:30px;
+}
+.container-scroll-4 .first .first-left-child-1 img{
+    border-radius: 50%;
+    margin-top:10px;
+}
+
+.container-scroll-4 .first .first-left-child-2{
+
+    /* color:red; */
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.container-scroll-4 .first .first-right-icons{
+    margin-right:30px;
+    margin-top: 44px;
+    font-size:20px;
+    color:black;
+}
+.container-scroll-4 .first .first-right-icons:hover{
+    background-color:#65676b40;
+    width:25px;
+    height:30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container-scroll-4 .second{
+  width:90%;
+  height: 350px;
+  /* border:red solid 1px; */
+  margin-left:40px;
+  margin-top:10px;
+  /* background-color:blue; */
+ background-image: url("https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover 
+}
+.container-scroll-4 .caption{
+margin-top:10px;
+margin-left:40px;
+font-size: 20px;
+color:gray;
+    
+}
+
+.container-scroll-4 .second .desc-caption {
+  width:100%;
+}
+/* start coding the react*/
+
+.react{
+    border-top: black solid 1px;
+    margin-top:29px;
+    margin-left:40px;
+    margin-right:40px;
+   
+}
+.react .react-parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px;
+}
+
+.react .react-parent div{
+    color:gray;
+}
+.react .react-parent div a {
+    text-decoration: none;
+    color:blue;
+}
+
+.react .react-parent div  :hover{
+    color:gray;
+}
+
+
+
+
+
+
+
+
+/* end coding the post-4 */
+
+/* start coding style post-5*/
+
+.container-scroll-5 {
+
+    width: 100%;
+    height: 250px;
+    /* border: red solid 1px; */
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px #ddd;
+    margin-top:50px;
+    border-radius: 28px;
+}
+
+.container-scroll-5 .fpost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-scroll-5 .fpost .fpost-left-1 {
+    display: flex;
+    margin-left: 20px;
+    margin-top:15px;
+}
+
+.container-scroll-5 .fpost .fpost-left-1 img{
+    margin-right: 10px; 
+    border-radius: 50%;
+
+}
+
+
+.container-scroll-5 .fpost .fpost-right-1 i {
+    margin-right: 30px;
+    margin-top:25px;
+    color:blue;
+    padding:0px 10px 0px 10px ;
+    font-size: 20px;
+
+}
+
+.container-scroll-5 .lpost p{
+    margin-top:25px;
+    margin-left:20px;
+
+}
+
+
+.container-scroll-5 .lpost .lpost-recat { 
+    border-top: 1px black solid ;
+    margin-top:50px;
+    margin-right: 30px;
+    margin-left:30px;
+   
+}
+
+.container-scroll-5 .lpost .lpost-recat .lpost-react-parent{
+
+ display: flex;
+    justify-content: space-around;
+    margin-top:40px;
+}
+
+
+.container-scroll-5 .lpost .lpost-recat .lpost-react-parent div {
+
+ color:gray;
+}
+
+
+.container-scroll-5 .lpost .lpost-recat .lpost-react-parent div a {
+    text-decoration: none;
+    color:blue;
+}
+
+.container-scroll-5 .lpost .lpost-recat .lpost-react-parent div :hover{
+    color:gray;
+}
+
+
+
+/* end coding the style post-5*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End the middle side */
+
+
+
+/* start coding the right side style*/
+
+.right-side{
+  
+
+ background-color: #f0f2f5;
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    right: 0;
+    top: 56px;
+    padding: 20px;
+    width: 300px;
+}
+.right-side:hover{
+    overflow-y: scroll;
+}
+
+.right-side h2{
+    font-weight:lighter;
+    color: #5a5555;
+    padding: 30px;
+    
+
+}
+
+.right-side .right-side-div1{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.right-side .right-side-div1 img{
+    width: 120px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.right-side .right-side-div1 p{
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+
+
+.right-side .right-side-div2{
+    display: flex;
+    align-items: center;
+    margin-left:23px;
+
+}
+
+.right-side .right-side-div2 img{
+    width: 120px;
+    height: 70px;
+    border-radius: 8px;
+    margin:10px;
+}
+
+.right-side .right-side-div2 p{
+    text-transform: capitalize;
+}
+
+
+.right-side-div3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-side .right-side-div3 p{
+  margin-left:20px;
+}
+
+.right-side .right-side-div3 a {
+
+text-decoration: none;
+padding: 7px;
+color: #65676b;
+
+}
+
+.right-side .right-side-list  li{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.right-side .right-side-list  li p{
+    margin-left: 15px;
+}
+.right-side .right-side-list  li img{
+    border-radius: 50%;
+    width:50px;
+    height: 40px;
+}
+
+/* End Of Coding The Right Side*/
